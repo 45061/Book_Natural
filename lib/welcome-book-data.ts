@@ -103,6 +103,44 @@ const houseRulesLocalized: LocalizedText[] = [
   },
 ]
 
+const petStayRulesLocalized: LocalizedText[] = [
+  {
+    es: "La mascota para su estancia en Hotel Natural Sevgi no debe superar los 40 cm de alto.",
+    en: "Pets must not exceed 40 cm in height.",
+    fr: "Les animaux ne doivent pas depasser 40 cm de hauteur.",
+  },
+  {
+    es: "Durante su permanencia la mascota no debera estar sola en la habitacion; si ocurre, no debera superar 20 minutos sin supervision.",
+    en: "Pets should not stay alone in the room; if unavoidable, no more than 20 minutes unsupervised.",
+    fr: "Les animaux ne doivent pas rester seuls dans la chambre; si cela arrive, pas plus de 20 minutes sans surveillance.",
+  },
+  {
+    es: "Si tienes mas de una reserva, por favor no cambies a tu mascota de habitacion; de hacerlo, se realizara un cobro adicional de $20.000 COP.",
+    en: "If you have more than one booking, do not move your pet between rooms; otherwise an additional COP 20,000 fee applies.",
+    fr: "Si vous avez plus d'une reservation, ne changez pas votre animal de chambre; sinon un frais supplementaire de 20 000 COP s'applique.",
+  },
+  {
+    es: "Las necesidades fisiologicas de las mascotas deben ser suplidas fuera de las instalaciones del hotel, al menos dos veces al dia.",
+    en: "Pets' physiological needs must be handled outside the hotel facilities at least twice a day.",
+    fr: "Les besoins physiologiques des animaux doivent etre geres a l'exterieur de l'hotel au moins deux fois par jour.",
+  },
+  {
+    es: "Es responsabilidad total del huesped si la mascota ensucia o daña cualquier bien dentro o fuera de la habitacion, y podran aplicarse costos adicionales.",
+    en: "Guests are fully responsible for any dirt or damage caused by pets inside or outside the room, and extra charges may apply.",
+    fr: "Le client est entierement responsable des salissures ou dommages causes par l'animal a l'interieur ou a l'exterieur de la chambre, et des frais supplementaires peuvent s'appliquer.",
+  },
+  {
+    es: "En lo posible, la mascota debe mantener comportamientos tranquilos para respetar la tranquilidad de otros huespedes.",
+    en: "Whenever possible, pets should remain calm to respect other guests' peace and quiet.",
+    fr: "Dans la mesure du possible, les animaux doivent rester calmes pour respecter la tranquillite des autres clients.",
+  },
+  {
+    es: "Somos Pet-Friendly con responsabilidad y amor por las mascotas, asegurando su bienestar con estas medidas.",
+    en: "We are Pet-Friendly with responsibility and care, ensuring pet wellbeing through these measures.",
+    fr: "Nous sommes Pet-Friendly avec responsabilite et bienveillance, en assurant le bien-etre des animaux grace a ces mesures.",
+  },
+]
+
 const usefulServicesLocalized: LocalizedText[] = [
   { es: "WiFi gratuito", en: "Free WiFi", fr: "WiFi gratuit" },
   { es: "Agua caliente", en: "Hot water", fr: "Eau chaude" },
@@ -449,6 +487,7 @@ export const welcomeBookTranslations = {
     stayDescription: "La idea es que tengas acceso rapido a los datos mas consultados durante tu visita.",
     servicesTitle: "Servicios disponibles",
     rulesTitle: "Normas importantes",
+    petRulesTitle: "Normas para estancia de mascotas",
     exploreTag: "Explora la zona",
     exploreTitle: "Recomendaciones cercanas para comer, salir y conocer Bogota",
     exploreDescription:
@@ -499,6 +538,7 @@ export const welcomeBookTranslations = {
     stayDescription: "The goal is to give you quick access to the details guests ask for most during their stay.",
     servicesTitle: "Available services",
     rulesTitle: "Important rules",
+    petRulesTitle: "Pet stay rules",
     exploreTag: "Explore the area",
     exploreTitle: "Nearby recommendations to eat, go out and discover Bogota",
     exploreDescription:
@@ -549,6 +589,7 @@ export const welcomeBookTranslations = {
     stayDescription: "L'objectif est de vous donner un acces rapide aux informations les plus utiles pendant votre visite.",
     servicesTitle: "Services disponibles",
     rulesTitle: "Regles importantes",
+    petRulesTitle: "Regles du sejour avec animaux",
     exploreTag: "Explorer les environs",
     exploreTitle: "Recommandations proches pour manger, sortir et decouvrir Bogota",
     exploreDescription:
@@ -582,6 +623,10 @@ export function getArrivalNotes(locale: Locale) {
 
 export function getHouseRules(locale: Locale) {
   return houseRulesLocalized.map((item) => pickText(item, locale))
+}
+
+export function getPetStayRules(locale: Locale) {
+  return petStayRulesLocalized.map((item) => pickText(item, locale))
 }
 
 export function getUsefulServices(locale: Locale) {

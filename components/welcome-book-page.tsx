@@ -7,6 +7,7 @@ import {
   Car,
   CheckCircle2,
   Coffee,
+  Dog,
   FileText,
   MapPin,
   MessageCircle,
@@ -26,6 +27,7 @@ import {
   getArrivalNotes,
   getEmergencyContacts,
   getHouseRules,
+  getPetStayRules,
   getUsefulServices,
   hotelWelcomeInfo,
   localizedHotelInfo,
@@ -41,6 +43,7 @@ export default function WelcomeBookPage() {
 
   const arrivalNotes = useMemo(() => getArrivalNotes(locale), [locale])
   const houseRules = useMemo(() => getHouseRules(locale), [locale])
+  const petStayRules = useMemo(() => getPetStayRules(locale), [locale])
   const usefulServices = useMemo(() => getUsefulServices(locale), [locale])
   const emergencyContacts = useMemo(() => getEmergencyContacts(locale), [locale])
 
@@ -231,6 +234,25 @@ export default function WelcomeBookPage() {
                 <h3 className="text-2xl font-semibold text-primary">{t.rulesTitle}</h3>
                 <div className="mt-6 space-y-4">
                   {houseRules.map((rule) => (
+                    <div key={rule} className="flex items-start gap-3">
+                      <CheckCircle2 className="mt-0.5 h-5 w-5 text-secondary" />
+                      <p className="text-sm leading-relaxed text-muted-foreground">{rule}</p>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mt-6">
+            <Card className="border-border/70">
+              <CardContent className="p-8">
+                <div className="mb-5 inline-flex rounded-2xl bg-secondary/15 p-4 text-secondary">
+                  <Dog className="h-7 w-7" />
+                </div>
+                <h3 className="text-2xl font-semibold text-primary">{t.petRulesTitle}</h3>
+                <div className="mt-6 space-y-4">
+                  {petStayRules.map((rule) => (
                     <div key={rule} className="flex items-start gap-3">
                       <CheckCircle2 className="mt-0.5 h-5 w-5 text-secondary" />
                       <p className="text-sm leading-relaxed text-muted-foreground">{rule}</p>
