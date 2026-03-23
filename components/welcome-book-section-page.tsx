@@ -9,6 +9,7 @@ import {
   CheckCircle2,
   Coffee,
   Compass,
+  Dog,
   Home,
   MapPin,
   MessageCircle,
@@ -22,6 +23,7 @@ import {
   getEmergencyContacts,
   getFallbackPlaces,
   getNearbyHighlights,
+  getPetStayRules,
   hotelWelcomeInfo,
   localizedHotelInfo,
   type Locale,
@@ -86,6 +88,11 @@ const pageCopy = {
       intro: "Aqui tienes los canales principales de contacto del hotel y la linea de emergencias para resolver cualquier necesidad durante tu estadia.",
       whatsapp: "Abrir WhatsApp",
     },
+    "normas-mascotas": {
+      title: "Normas para estancia de mascotas",
+      description: "Conoce las reglas Pet-Friendly para una estancia tranquila y responsable.",
+      intro: "Estas normas aplican para proteger el bienestar de las mascotas, la tranquilidad de los huespedes y el cuidado de las instalaciones.",
+    },
   },
   en: {
     back: "Back",
@@ -142,6 +149,11 @@ const pageCopy = {
       description: "Quick channels to get help during your stay.",
       intro: "Here you can find the main hotel contact channels and the emergency line in case you need support during your stay.",
       whatsapp: "Open WhatsApp",
+    },
+    "normas-mascotas": {
+      title: "Pet stay rules",
+      description: "Review the Pet-Friendly rules for a responsible and smooth stay.",
+      intro: "These rules protect pet wellbeing, guest comfort and the hotel facilities.",
     },
   },
   fr: {
@@ -200,6 +212,11 @@ const pageCopy = {
       intro: "Vous trouverez ici les principaux canaux de contact de l'hotel ainsi que la ligne d'urgence pour toute assistance pendant votre sejour.",
       whatsapp: "Ouvrir WhatsApp",
     },
+    "normas-mascotas": {
+      title: "Regles du sejour avec animaux",
+      description: "Consultez les regles Pet-Friendly pour un sejour responsable et confortable.",
+      intro: "Ces regles protegent le bien-etre des animaux, la tranquillite des clients et les installations de l'hotel.",
+    },
   },
 } as const
 
@@ -212,6 +229,7 @@ const sectionIcons = {
   restaurantes: UtensilsCrossed,
   planes: Compass,
   contacto: PhoneCall,
+  "normas-mascotas": Dog,
 }
 
 export type SectionSlug =
@@ -223,6 +241,7 @@ export type SectionSlug =
   | "restaurantes"
   | "planes"
   | "contacto"
+  | "normas-mascotas"
 
 function getLocale(searchParams: URLSearchParams): Locale {
   const lang = searchParams.get("lang")
@@ -246,7 +265,13 @@ export default function WelcomeBookSectionPage({ slug }: { slug: SectionSlug }) 
   const contacts = getEmergencyContacts(locale)
   const nearby = getNearbyHighlights(locale)
   const arrival = getArrivalNotes(locale)
-  const activeTab = slug === "restaurantes" || slug === "planes" || slug === "ubicacion" ? "explore" : slug === "contacto" ? "profile" : "home"
+  const petRules = getPetStayRules(locale)
+  const activeTab =
+    slug === "restaurantes" || slug === "planes" || slug === "ubicacion"
+      ? "explore"
+      : slug === "contacto"
+        ? "profile"
+        : "home"
 
   return (
     <main className="min-h-screen bg-[linear-gradient(180deg,rgba(241,245,249,0.85),rgba(255,255,255,1))] px-4 py-6">
@@ -434,6 +459,18 @@ export default function WelcomeBookSectionPage({ slug }: { slug: SectionSlug }) 
                 <MessageCircle className="h-4 w-4" />
                 {t.contacto.whatsapp}
               </a>
+            </>
+          )}
+
+          {slug === "normas-mascotas" && (
+            <>
+              <h2 className="sr-only">Normas para estancia de mascotas</h2>
+              {petRules.map((rule) => (
+                <div key={rule} className="flex items-start gap-3 rounded-2xl border border-border/60 p-4">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 text-secondary" />
+                  <p className="text-sm leading-relaxed text-muted-foreground">{rule}</p>
+                </div>
+              ))}
             </>
           )}
         </section>

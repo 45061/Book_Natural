@@ -14,6 +14,7 @@ const validSlugs = new Set([
   "restaurantes",
   "planes",
   "contacto",
+  "normas-mascotas",
 ])
 
 const metadataBySlug: Record<SectionSlug, Metadata> = {
@@ -48,6 +49,10 @@ const metadataBySlug: Record<SectionSlug, Metadata> = {
   contacto: {
     title: "Contacto del Hotel | Libro de Bienvenida Natural Sevgi",
     description: "Canales de contacto y ayuda rapida para huespedes del Hotel Natural Sevgi durante su estancia.",
+  },
+  "normas-mascotas": {
+    title: "Normas para Mascotas | Libro de Bienvenida Natural Sevgi",
+    description: "Consulta las normas para estancia de mascotas del Hotel Natural Sevgi.",
   },
 }
 

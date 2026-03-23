@@ -6,6 +6,7 @@ import {
   CarFront,
   Coffee,
   Compass,
+  Dog,
   Home,
   MapPin,
   MessageCircle,
@@ -32,6 +33,7 @@ const translations = {
       restaurants: "Restaurantes",
       plans: "Planes",
       contact: "Contacto",
+      petRules: "Mascotas",
     },
     bottom: { home: "Inicio", explore: "Explorar", chat: "Chat", profile: "Perfil" },
     callToAction: "Escribir a recepcion",
@@ -49,6 +51,7 @@ const translations = {
       restaurants: "Restaurants",
       plans: "Things to do",
       contact: "Contact",
+      petRules: "Pet rules",
     },
     bottom: { home: "Home", explore: "Explore", chat: "Chat", profile: "Profile" },
     callToAction: "Message reception",
@@ -66,6 +69,7 @@ const translations = {
       restaurants: "Restaurants",
       plans: "Activites",
       contact: "Contact",
+      petRules: "Animaux",
     },
     bottom: { home: "Accueil", explore: "Explorer", chat: "Chat", profile: "Profil" },
     callToAction: "Ecrire a la reception",
@@ -81,6 +85,7 @@ const sectionCards = [
   { slug: "restaurantes", icon: UtensilsCrossed, key: "restaurants" },
   { slug: "planes", icon: Compass, key: "plans" },
   { slug: "contacto", icon: PhoneCall, key: "contact" },
+  { slug: "normas-mascotas", icon: Dog, key: "petRules" },
 ] as const
 
 function useLocale() {
