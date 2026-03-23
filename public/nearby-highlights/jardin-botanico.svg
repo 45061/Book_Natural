@@ -1,0 +1,12 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#173C2A"/>
+  <rect y="610" width="1600" height="290" fill="#1E583A"/>
+  <circle cx="1310" cy="170" r="80" fill="#F4B942"/>
+  <path d="M0 560C173 482 346 443 520 470C693 497 866 592 1040 586C1213 580 1386 473 1600 430V900H0V560Z" fill="#2F8C58"/>
+  <path d="M160 640C252 560 340 520 430 522C520 524 611 579 700 641C789 703 877 770 967 772C1057 774 1147 711 1237 649C1327 587 1415 525 1500 524V900H160V640Z" fill="#6CBF74"/>
+  <rect x="740" y="360" width="38" height="230" rx="19" fill="#6B4A2F"/>
+  <circle cx="759" cy="310" r="120" fill="#6CBF74"/>
+  <circle cx="680" cy="350" r="72" fill="#58A863"/>
+  <circle cx="840" cy="350" r="72" fill="#58A863"/>
+  <text x="800" y="735" text-anchor="middle" fill="#FFFFFF" font-size="68" font-family="Arial, sans-serif" font-weight="700">Jardin Botanico</text>
+</svg>

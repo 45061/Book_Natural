@@ -1,0 +1,12 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#0D2634"/>
+  <rect y="600" width="1600" height="300" fill="#112B3C"/>
+  <path d="M120 600L370 250H1230L1480 600H120Z" fill="#F2F3F4"/>
+  <rect x="260" y="360" width="1080" height="160" rx="24" fill="#CBE3EC"/>
+  <rect x="310" y="395" width="180" height="88" rx="16" fill="#1E4A5F"/>
+  <rect x="540" y="395" width="180" height="88" rx="16" fill="#1E4A5F"/>
+  <rect x="770" y="395" width="180" height="88" rx="16" fill="#1E4A5F"/>
+  <rect x="1000" y="395" width="180" height="88" rx="16" fill="#1E4A5F"/>
+  <circle cx="1320" cy="170" r="72" fill="#F3B241"/>
+  <text x="800" y="728" text-anchor="middle" fill="#FFFFFF" font-size="72" font-family="Arial, sans-serif" font-weight="700">Salitre Plaza</text>
+</svg>

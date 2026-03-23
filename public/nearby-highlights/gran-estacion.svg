@@ -1,0 +1,13 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#153247"/>
+  <rect y="620" width="1600" height="280" fill="#0A1D28"/>
+  <rect x="220" y="240" width="1160" height="360" rx="34" fill="#F6F0E7"/>
+  <rect x="300" y="310" width="1000" height="130" rx="24" fill="#E1B15A"/>
+  <rect x="300" y="472" width="160" height="78" rx="16" fill="#153247"/>
+  <rect x="500" y="472" width="160" height="78" rx="16" fill="#153247"/>
+  <rect x="700" y="472" width="160" height="78" rx="16" fill="#153247"/>
+  <rect x="900" y="472" width="160" height="78" rx="16" fill="#153247"/>
+  <rect x="1100" y="472" width="160" height="78" rx="16" fill="#153247"/>
+  <circle cx="1260" cy="160" r="76" fill="#F3B241"/>
+  <text x="800" y="730" text-anchor="middle" fill="#FFFFFF" font-size="72" font-family="Arial, sans-serif" font-weight="700">Gran Estacion</text>
+</svg>

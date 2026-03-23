@@ -1,0 +1,13 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#1A2C5B"/>
+  <rect y="670" width="1600" height="230" fill="#0E1B3C"/>
+  <circle cx="1300" cy="160" r="78" fill="#F4B942"/>
+  <circle cx="480" cy="420" r="170" stroke="#F4B942" stroke-width="24"/>
+  <circle cx="480" cy="420" r="24" fill="#F4B942"/>
+  <path d="M480 250V590" stroke="#F4B942" stroke-width="10"/>
+  <path d="M310 420H650" stroke="#F4B942" stroke-width="10"/>
+  <path d="M920 610L1030 360L1140 610H920Z" fill="#E94E77"/>
+  <path d="M1015 610V305" stroke="#F4B942" stroke-width="16"/>
+  <path d="M1170 610L1280 420L1390 610H1170Z" fill="#6AD3C0"/>
+  <text x="800" y="748" text-anchor="middle" fill="#FFFFFF" font-size="72" font-family="Arial, sans-serif" font-weight="700">Salitre Magico</text>
+</svg>

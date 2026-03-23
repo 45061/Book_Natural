@@ -1,0 +1,11 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#102B3B"/>
+  <rect y="650" width="1600" height="250" fill="#0B1D28"/>
+  <circle cx="1260" cy="170" r="74" fill="#F4B942"/>
+  <circle cx="500" cy="420" r="180" fill="#1B5369"/>
+  <circle cx="500" cy="420" r="120" fill="#F4B942"/>
+  <circle cx="1110" cy="410" r="200" fill="#E8EDF2"/>
+  <circle cx="1110" cy="410" r="116" fill="#C9DAE5"/>
+  <rect x="740" y="300" width="120" height="260" rx="24" fill="#F4B942"/>
+  <text x="800" y="745" text-anchor="middle" fill="#FFFFFF" font-size="72" font-family="Arial, sans-serif" font-weight="700">Maloka</text>
+</svg>
